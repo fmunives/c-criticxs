@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_19_214610) do
+ActiveRecord::Schema.define(version: 2020_05_19_232708) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2020_05_19_214610) do
     t.string "name"
     t.text "description"
     t.date "start_date"
-    t.date "country"
+    t.string "country"
   end
 
   create_table "critics", force: :cascade do |t|
